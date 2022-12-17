@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <h2>Made by: Ahmed Al-Bahrani</h2>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif}
+  * {box-sizing: border-box;}
+  .
+  position: relative;
+  
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  
+  
+  .topnav {
+    overflow: hidden; 
+    background-color: #333;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="bg-img">
+    <div class="container">
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="index2.html">Screening</a>
+        <a href="index3.html">What is a concussion</a>
+        
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+.centerx {
+    margin: auto;
+            width: 30%;
+            padding: 10px;
+            background-color: rgb(255, 109, 109);
+            border: 3px solid #000000;
+            box-shadow: 5px 10px #888888;
+          }
+          .centery {
+            margin: auto;
+            width: 30%;
+            padding: 10px;
+            background-color: rgb(255, 109, 109);
+            border: 3px solid #000000;
+            box-shadow: 5px 10px #888888;
+          }
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+<title>
+Concussion self screening
+</title>
+</head>
+
+
+<body>
+  <div class= centery>
+    
+    <h1 style="color:rgb(4, 0, 0)">
+    Please complete the screening down below:
+    </h1>
+    </div>
+    
+    
+    <div class="centerx">
+    <form action="/action_page.php">
+        <input type="checkbox" class="questions"id="vehicle1" name="vehicle3" value="Boat">
+        <label for="vehicle4"> Headache</label><br><br>
+        <input type="checkbox" class="questions" id="vehicle2" name="vehicle3" value="Boat">
+        <label for="vehicle4"> Pressure in the head</label><br><br>
+        <input type="checkbox" class="questions" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4"> Neck pain</label><br><br>
+        <input type="checkbox" class="questions" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Nausea/vomiting</label><br><br>
+        <input type="checkbox" class="questions"  id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Dizziness</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Blurred vision</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Balance problems</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Sensitivity to light</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Sensitivity to noise</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Feeling slowed down</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Feeling “in a fog”</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Feeling “not right”</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Difficulty concentrating</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Difficulty remembering</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Fatigue or low energy</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Confusion</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Drowsiness</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">More emotional</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Irritability</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Sadness</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle4">Nervous or Anxious</label><br><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="fallSleep">
+        <label for="vehicle4">Trouble falling asleep</label><br><br>
+        </div>
+      </form>
+     
+    <div>
+    <p>PLEASE NOTE: if you checked more than 6 symptoms please visit a doctor or dive further within the subject.</p>
+    </div>
+  <script>
+    $(document).ready(function(){
+      var counter = 0; 
+
+      $('input[type="checkbox"]').on("click", function(){
+        if($(this).prop('checked') === true) {
+          counter = counter + 1; 
+        }else {
+          counter = counter - 1;
+        }
+        console.log(counter)
+
+        if(counter >= 5) {
+          alert("You have selected 5 main symptoms of a concussion. Please refer to a medical professional or dive further within the subject.");
+        }
+      })
+    })
+
+  </script>
+</body>
+</html>
